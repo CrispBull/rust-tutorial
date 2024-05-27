@@ -3,4 +3,11 @@ name = "zero2prod"
 version = "0.1.0"
 edition = "2021"
 
+[target.x86_64-apple-darwin]
+rustflags = ["-C", "link-arg-fuse-ld=lld"]
+
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg-fuse-ld=/opt/llvm/bin/ld64.lld"]
+
 [dependencies]
+cargo-tarpaulin = "0.30.0"

@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    let sums = 23 + 45;
+    println!("Sum of values is {}", sums)
 }
